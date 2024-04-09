@@ -67,7 +67,7 @@ export default function Button({
 
   return (
     <button
-      className={`border border-black bg-blue-500 px-3 py-5 text-white ${typeof button === "number" ? "bg-blue-500" : "bg-blue-700"} ${button === 0 ? "col-span-2" : "col-span-1"} ${button === "=" && "rounded-br-md"} ${button === 0 && "rounded-bl-md"}`}
+      className={`border border-black bg-blue-500 px-3 py-5 text-white ${typeof button === "number" ? "bg-blue-500" : "bg-blue-700"} ${button === 0 ? "col-span-2" : "col-span-1"} ${button === "=" && "rounded-br-md"} ${button === 0 && "rounded-bl-md"} hover:scale-[.98] active:scale-[.95] active:brightness-90`}
       onClick={() =>
         button === "AC"
           ? handleClear()
